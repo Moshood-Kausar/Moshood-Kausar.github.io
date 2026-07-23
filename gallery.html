@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gallery · Kausar Moshood</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <div class="container flex-wrap">
+          <h1 class="logo"><a href="index.html">Kausar Moshood</a></h1>
+          <ul class="navbar">
+            <li><a href="index.html">About</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="assets/docs/Kausar_Moshood_Resume.pdf" target="_blank">Resume</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="page container gallery-container">
+      <h1 class="header-name">Gallery</h1>
+      <p class="publications-intro">Photos from conferences, talks, and workshops. Click a photo for a larger view.</p>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item" data-full="assets/img/gallery/beaverhack.jpg" data-caption="1st Place, BeaverHacks Social Impact Track, 2026">
+          <img src="assets/img/gallery/beaverhack.jpg" alt="BeaverHacks 2026" />
+          <div class="gallery-caption">1st Place, BeaverHacks Social Impact Track, 2026</div>
+        </div>
+
+        <div class="gallery-item" data-full="assets/img/gallery/PNW.png" data-caption="PNW PLSE 2026, University of Washington">
+          <img src="assets/img/gallery/PNW.png" alt="PNW PLSE 2026" />
+          <div class="gallery-caption">PNW PLSE 2026, University of Washington</div>
+        </div>
+
+        <div class="gallery-item" data-full="assets/img/gallery/DLI25.jpg" data-caption="Deep Learning Indaba 2025, Rwanda">
+          <img src="assets/img/gallery/DLI25.jpg" alt="Deep Learning Indaba 2025" />
+          <div class="gallery-caption">Deep Learning Indaba 2025, Rwanda</div>
+        </div>
+
+        <div class="gallery-item" data-full="assets/img/gallery/DLIP25.jpg" data-caption="Deep Learning Indaba 2025, Rwanda">
+          <img src="assets/img/gallery/DLIP25.jpg" alt="Deep Learning Indaba 2025" />
+          <div class="gallery-caption">Deep Learning Indaba 2025, Rwanda</div>
+        </div>
+
+        <div class="gallery-item" data-full="assets/img/gallery/NeurIPS.jpeg" data-caption="NeurIPS 2025, San Diego">
+          <img src="assets/img/gallery/NeurIPS.jpeg" alt="NeurIPS 2025" />
+          <div class="gallery-caption">NeurIPS 2025, San Diego</div>
+        </div>
+
+        <div class="gallery-item" data-full="assets/img/gallery/FF23.jpg" data-caption="Flutter Forward by Google 2023, Kenya">
+          <img src="assets/img/gallery/FF23.jpg" alt="Flutter Forward 2023" />
+          <div class="gallery-caption">Flutter Forward by Google 2023, Kenya</div>
+        </div>
+
+        <div class="gallery-item" data-full="assets/img/gallery/FFF23.jpg" data-caption="Flutter Forward by Google 2023, Kenya">
+          <img src="assets/img/gallery/FFF23.jpg" alt="Flutter Forward 2023" />
+          <div class="gallery-caption">Flutter Forward by Google 2023, Kenya</div>
+        </div>
+
+        <div class="gallery-item" data-full="assets/img/gallery/GDG.jpg" data-caption="Google Developer Group on Campus Lead, 2023">
+          <img src="assets/img/gallery/GDG.jpg" alt="GDG on Campus Lead" />
+          <div class="gallery-caption">Google Developer Group on Campus Lead, 2023</div>
+        </div>
+
+        <!--
+          To add more photos: drop the image file into assets/img/gallery/
+          and add a block like this:
+
+          <div class="gallery-item" data-full="assets/img/gallery/your-photo.jpg" data-caption="Event name, Month Year">
+            <img src="assets/img/gallery/your-photo.jpg" alt="Short description" />
+            <div class="gallery-caption">Event name, Month Year</div>
+          </div>
+        -->
+      </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+      <img id="lightbox-img" src="" alt="" />
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small><b>Last updated:</b> July 2026</small>
+        <small class="block">© Kausar Moshood · hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</small>
+      </div>
+    </footer>
+
+    <script>
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxCaption = document.getElementById('lightbox-caption');
+
+      document.querySelectorAll('.gallery-item').forEach(item => {
+        item.addEventListener('click', () => {
+          lightboxImg.src = item.dataset.full;
+          lightboxCaption.textContent = item.dataset.caption || '';
+          lightbox.classList.add('open');
+        });
+      });
+
+      function closeLightbox() { lightbox.classList.remove('open'); lightboxImg.src = ''; }
+      document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+    </script>
+  </body>
+</html>
