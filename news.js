@@ -1,11 +1,19 @@
 const NEWS_ITEMS = [
-  `<strong>[Aug 2026]</strong> I'm serving as a Reviewer for the <a href="https://sites.google.com/wimlworkshop.org/wimlworkshopneurips2026/home" target="_blank">Women in Machine Learning (WiML) Workshop</a>, co-located with NeurIPS 2026.`,
+  `<strong>[Sep 5–26, 2026]</strong> Co-hosted and coordinated the <a href="https://lynguallabs.substack.com/" target="_blank">LyngualLabs</a> weekly virtual seminar series, held every Saturday in September, moderating sessions and leading discussions with invited researchers. <a href="https://lynguallabs.substack.com/" target="_blank">Read the newsletter</a> · <a href="https://www.youtube.com/@LyngualLabs" target="_blank">Watch the recordings</a>.`,
 
-  `<strong>[Mar 2026]</strong> I served as a Reviewer for <a href="https://indabaxng.github.io/" target="_blank"> IndabaX Nigeria </a> 2026 Conference </a>.`,
+  `<strong>[Sep 3, 2026]</strong> Nominated by the program committee to serve as a Reviewer for the <a href="https://vericodegen.github.io/" target="_blank">VeriCodeGen: AI for Verifiable Coding</a> Workshop at NeurIPS 2026, Atlanta, USA.`,
+
+  `<strong>[Sep 2, 2026]</strong> Appointed as the first Student Lead of the <a href="https://www.meetup.com/aws-sbg-at-oregon-state-university-corvallis-campus/" target="_blank">AWS Student Builder Group at Oregon State University</a>, building a community of students who learn, build, and ship on the cloud together. <a href="https://www.meetup.com/aws-sbg-at-oregon-state-university-corvallis-campus/" target="_blank">Join the group</a>.`,
+
+  `<strong>[Aug 3–7, 2026]</strong> Selected to attend the <a href="https://iaifi.org/phd-summer-school.html" target="_blank">IAIFI Summer School</a> virtually, an intensive program of lectures and hands-on tutorials at the intersection of AI and physics, organized by the NSF Institute for Artificial Intelligence and Fundamental Interactions and sponsored by the National Science Foundation, with support from Hudson River Trading, Google DeepMind, and others.`,
+
+  `<strong>[Aug 2026]</strong> I'm serving as a Reviewer for the <a href="https://sites.google.com/wimlworkshop.org/wimlworkshopneurips2026/home" target="_blank">Women in Machine Learning (WiML) Workshop</a>, co-located with NeurIPS 2026.`,
 
   `<strong>[May 2026]</strong> Gave a talk, <em>"RESTLocator: Fault Localization for Defects in REST API Systems,"</em> at the <a href="https://pnwplse.org/" target="_blank">Pacific Northwest Programming Languages and Software Engineering (PNW PLSE)</a> workshop, University of Washington, USA. <a href="https://youtu.be/aaDhAIXkPv0?si=Y2x2_wCSFusAh_cY" target="_blank">Watch the talk</a>.`,
 
   `<strong>[May 2026]</strong> Won 1st place in the Social Impact track at <a href="https://beaverhacks.org/" target="_blank">BeaverHacks</a>, Oregon's largest hackathon, with <strong>SpeakAbroad</strong>, a platform I built to help international students practice real-life conversational scenarios. <a href="http://judge.beaverhacks.org" target="_blank">See the project</a> · <a href="https://youtu.be/vbdvsOMLxSw?si=NeJ64JtIh2AL5B-c" target="_blank">Watch the demo</a>.`,
+
+  `<strong>[Mar 2026]</strong> Served as a Reviewer for the <a href="https://indabaxng.github.io/" target="_blank">IndabaX Nigeria</a> 2026 Conference.`,
 
   `<strong>[Jan 2026]</strong> Served as a Reviewer for the 7th AfricaNLP Workshop, co-located with EACL 2026, Rabat, Morocco.`,
 
